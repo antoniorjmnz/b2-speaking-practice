@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-15",
+  "usage": "Original academy speaking tasks. Photographs are used under the Unsplash License; attribution is included for traceability even though it is not required by that license.",
+  "license_url": "https://unsplash.com/license",
+  "assets": [
+    {
+      "practice_id": "P2-009",
+      "asset_path": "/practice-assets/original/academy-part2/p2-009-photo-a.jpg",
+      "source_image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
+      "sha256": "0965F8ABE2E0B19F7C6E9CB15D68F65618D5357398BF51637E7501E2E6FFF4D6"
+    },
+    {
+      "practice_id": "P2-009",
+      "asset_path": "/practice-assets/original/academy-part2/p2-009-photo-b.jpg",
+      "source_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+      "sha256": "903A72B8C3327BE8864113B1B3D755E42A53F6738020636A61895B3D20163205"
+    },
+    {
+      "practice_id": "P2-010",
+      "asset_path": "/practice-assets/original/academy-part2/p2-010-photo-a.jpg",
+      "source_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+      "sha256": "928ACBB5FE44F42B1B78AE1E0DCA1F87D7FB293194ACA7B96BDC1FED19649582"
+    },
+    {
+      "practice_id": "P2-010",
+      "asset_path": "/practice-assets/original/academy-part2/p2-010-photo-b.jpg",
+      "source_image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5",
+      "sha256": "F588FCC8BFD11AFA2EBBABA9D4B78CD76C85D47F99B7623AE9ECE8FC3912B69F"
+    },
+    {
+      "practice_id": "P2-011",
+      "asset_path": "/practice-assets/original/academy-part2/p2-011-photo-a.jpg",
+      "source_image": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
+      "sha256": "A1D6F1FB9164BFB80660984471C01795ACCBB4BDBD4883EE143A4D5A71DF779F"
+    },
+    {
+      "practice_id": "P2-011",
+      "asset_path": "/practice-assets/original/academy-part2/p2-011-photo-b.jpg",
+      "source_image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
+      "sha256": "7F04B69ED9343CBE4822FFE4AC30162BB77E2A3EC847FAAF7A3870CDA77000D6"
+    },
+    {
+      "practice_id": "P2-012",
+      "asset_path": "/practice-assets/original/academy-part2/p2-012-photo-a.jpg",
+      "source_image": "https://images.unsplash.com/photo-1557425747-929b65a39785",
+      "sha256": "EBB8F003D5BABADD7A53C52518FB5DEBA63CBC6B9A49642EDBAE1AFA5CC0FF8B"
+    },
+    {
+      "practice_id": "P2-012",
+      "asset_path": "/practice-assets/original/academy-part2/p2-012-photo-b.jpg",
+      "source_image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+      "sha256": "6FF99BFD621B60B96E1980511FDE12CA0BFF07337F736EB603AD7A037CD9D937"
+    }
+  ]
+}

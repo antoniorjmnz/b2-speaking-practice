@@ -1,0 +1,11 @@
+services:
+  api:
+    env_file:
+      - .env.custom
+    environment:
+      AI_MODE: real
+
+  web:
+    build:
+      args:
+        NEXT_PUBLIC_APP_PROFILE: custom

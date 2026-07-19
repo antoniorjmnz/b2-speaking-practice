@@ -1,0 +1,4 @@
+.next/
+.next-e2e/
+node_modules/
+public/assets/**/*.wav

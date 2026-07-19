@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Learning alone online</title>
+  <desc id="desc">An editorial illustration of a student following an online lesson at a desk at home.</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9cfca"/><stop offset="1" stop-color="#e5ded0"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".75" numOctaves="3" stitchTiles="stitch" type="fractalNoise"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .065"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#room)"/>
+  <rect width="1200" height="760" filter="url(#grain)" opacity=".5"/>
+  <path d="M0 587h1200v173H0z" fill="#c4ab89"/>
+  <path d="M0 587h1200" stroke="#10233f" stroke-width="5"/>
+  <rect x="85" y="82" width="255" height="355" fill="#f8f5ea" stroke="#10233f" stroke-width="6"/>
+  <circle cx="211" cy="201" r="70" fill="#f4c952"/>
+  <path d="M137 341c30-84 119-92 153 0" fill="#e34a2c"/>
+  <path d="M170 200c3-51 74-63 90-14l-18 16-61 11z" fill="#10233f"/>
+  <rect x="516" y="167" width="506" height="318" rx="14" fill="#10233f"/>
+  <rect x="541" y="191" width="456" height="257" fill="#f3efe4"/>
+  <g transform="translate(563 210)">
+    <rect width="270" height="215" fill="#90aca6"/>
+    <circle cx="132" cy="92" r="48" fill="#cf8a69"/>
+    <path d="M79 86c2-51 78-70 100-14l-13 26-74 5z" fill="#10233f"/>
+    <path d="M54 215c16-88 144-93 164 0" fill="#1f6b54"/>
+    <path d="M229 23h23v78h-23zM201 51h79v22h-79z" fill="#f3efe4" opacity=".8"/>
+  </g>
+  <g transform="translate(851 210)">
+    <rect width="122" height="64" fill="#d7d0c2"/>
+    <circle cx="37" cy="28" r="17" fill="#e34a2c"/><path d="M66 19h38M66 37h28" stroke="#10233f" stroke-width="7"/>
+    <rect y="76" width="122" height="64" fill="#d7d0c2"/>
+    <circle cx="37" cy="105" r="17" fill="#f4c952"/><path d="M66 96h38M66 114h28" stroke="#10233f" stroke-width="7"/>
+    <rect y="152" width="122" height="63" fill="#d7d0c2"/>
+    <circle cx="37" cy="181" r="17" fill="#1f6b54"/><path d="M66 172h38M66 190h28" stroke="#10233f" stroke-width="7"/>
+  </g>
+  <path d="M740 485v62M654 547h173" stroke="#10233f" stroke-width="17" stroke-linecap="square"/>
+  <path d="M389 521h754l-47 93H339z" fill="#eee7d8" stroke="#10233f" stroke-width="6"/>
+  <path d="M421 614l-28 146M1075 614l31 146" stroke="#10233f" stroke-width="14"/>
+  <circle cx="299" cy="492" r="48" fill="#d99670"/>
+  <path d="M250 478c13-62 90-60 104-7l-26 29-64-1z" fill="#10233f"/>
+  <path d="M182 708c13-139 191-151 233 0" fill="#e34a2c"/>
+  <path d="M395 595c95-28 147-22 215-11" fill="none" stroke="#d99670" stroke-width="32" stroke-linecap="round"/>
+  <rect x="0" y="0" width="1200" height="760" fill="none" stroke="#10233f" stroke-width="14"/>
+</svg>

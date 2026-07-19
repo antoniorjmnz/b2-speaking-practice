@@ -1,0 +1,31 @@
+{
+  "name": "b2-speaking-practice",
+  "private": true,
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,green \"pnpm dev:web\" \"pnpm dev:api\"",
+    "dev:web": "pnpm --filter @b2-speaking/web dev",
+    "dev:api": "node scripts/run-python.mjs -m uvicorn app.main:create_app --factory --reload --app-dir apps/api --port 8000",
+    "build": "pnpm --filter @b2-speaking/web build",
+    "lint": "pnpm --filter @b2-speaking/web lint && node scripts/run-python.mjs -m ruff check apps/api/app apps/api/tests apps/api/scripts",
+    "typecheck": "pnpm --filter @b2-speaking/web typecheck",
+    "test": "pnpm test:web && pnpm test:api",
+    "test:web": "pnpm --filter @b2-speaking/web test",
+    "test:api": "node scripts/run-python.mjs -m pytest apps/api/tests",
+    "test:e2e": "pnpm exec playwright test",
+    "format:check": "pnpm --filter @b2-speaking/web format:check && node scripts/run-python.mjs -m ruff format --check apps/api",
+    "security:audit": "pnpm audit --prod && node scripts/run-python.mjs -m pip_audit",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "check:all": "pnpm check && pnpm test:e2e"
+  },
+  "dependencies": {
+    "next": "^16.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "concurrently": "^9.2.0"
+  }
+}

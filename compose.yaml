@@ -1,0 +1,47 @@
+services:
+  api:
+    build:
+      context: ./apps/api
+    environment:
+      ENVIRONMENT: development
+      AI_MODE: demo
+      DATABASE_URL: sqlite+aiosqlite:////data/b2_speaking.db
+      AUTO_CREATE_DB: "true"
+      ENABLE_INLINE_WORKER: "true"
+      SESSION_TOKEN_PEPPER: offline-local-session-pepper-not-for-public-hosting
+      UPLOAD_SIGNING_SECRET: offline-local-upload-secret-not-for-public-hosting
+      PUBLIC_API_URL: http://localhost:8000
+      CORS_ALLOWED_ORIGINS: http://localhost:3000
+      TRUSTED_HOSTS: localhost,127.0.0.1,api,testserver
+      STORAGE_MODE: local
+      LOCAL_STORAGE_PATH: /data/storage
+      SESSION_RETENTION_MINUTES: "60"
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - b2-speaking-data:/data
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8000/v1/health', timeout=3)"
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8000
+        NEXT_PUBLIC_APP_PROFILE: offline
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:3000:3000"
+
+volumes:
+  b2-speaking-data:
